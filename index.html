@@ -9,58 +9,69 @@
 </head>
 <body>
     <div class="sidebar">
-        <div class="logo">
-            <img src="./assets/view-dashboard.svg" alt="logo">
-            <p>Dashboard</p>
-        </div>
-        <div class="primary-links">
-            <ul>
-                <li><img src="./assets/home-outline.png">Home</li>
-                <li><img src="./assets/card-account-details-outline.png">Profile</li>
-                <li><img src="./assets/message-reply-outline.png">Messages</li>
-                <li><img src="./assets/clock-time-three-outline.png">History</li>
-                <li><img src="./assets/file-multiple-outline.png">Tasks</li>
-                <li><img src="./assets/account-group.png">Communities</li>
-            </ul>
-        </div>
-        <div class="secondary-links">
-            <ul>
-                <li><img src="./assets/cog-outline.png">Setting</li>
-                <li><img src="./assets/help-circle-outline.png">Support</li>
-                <li><img src="./assets/shield-check-outline.png">Privacy</li>
-            </ul>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="./assets/view-dashboard.svg" alt="logo">
+                <p>Dashboard</p>
+            </div>
+            <div class="primary-links">
+                <ul>
+                    <li><img src="./assets/home-outline.png">Home</li>
+                    <li><img src="./assets/card-account-details-outline.png">Profile</li>
+                    <li><img src="./assets/message-reply-outline.png">Messages</li>
+                    <li><img src="./assets/clock-time-three-outline.png">History</li>
+                    <li><img src="./assets/file-multiple-outline.png">Tasks</li>
+                    <li><img src="./assets/account-group.png">Communities</li>
+                </ul>
+            </div>
+            <div class="secondary-links">
+                <ul>
+                    <li><img src="./assets/cog-outline.png">Setting</li>
+                    <li><img src="./assets/help-circle-outline.png">Support</li>
+                    <li><img src="./assets/shield-check-outline.png">Privacy</li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <header class="header">
-        <div class="search-bar">
-            <img src="./assets/magnify.png">
-            <input type="search" name="search" id="search">
+        <div class="top-header-bar">
+            <div class="search-bar">
+                <img src="./assets/magnify.png">
+                <input type="search" name="search" id="search">
+            </div>
+            <div class="my-profile">
+                <img src="./assets/bell.png" alt="bell-icon">
+                <img src="./assets/dog-circle.png" alt="user-icon" class="user-icon">
+                <p>John Doe</p>
+            </div>
         </div>
-        <div class="my-profile">
-            <img src="./assets/bell.png" alt="bell-icon">
-            <img src="./assets/dog-circle.png" alt="user-icon" class="user-icon">
-            <p>John Doe</p>
-        </div>
-        <div class="greeting">
-            <img src="./assets/dog-circle.png" alt="user-icon">
-            <p>Hi there,</p>
-            <p>John Doe (@jdoe)</p>
-        </div>
-        <div class="header-buttons">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+        <div class="bottom-header-bar">
+            <div class="greeting">
+                <img src="./assets/dog-circle.png" alt="user-icon"
+                id="user-greet-icon">
+                <div>
+                    <h3>Hi there,</h3>
+                    <h2 class="header-greet-h2">John Doe (@jdoe)</h2>
+                </div>
+            </div>
+            <div class="header-buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
         </div>
     </header>
 
     <main>
         <section class="projects-section">
-            <p>Your Projects</p>
+            <h2>Your Projects</h2>
             <div class="card-container">
                 <div class="card">
-                    <p>Super Cool Project</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat sed modi sequi cumque tempore minus neque quas voluptatum ullam rem.</p>
+                    <div class="card-text">
+                        <p>Super Cool Project</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat sed modi sequi cumque tempore minus neque quas voluptatum ullam rem.</p>
+                    </div>
                     <div class="card-icon-container">
                         <img src="./assets/save.png" alt="save-icon">
                         <img src="./assets/fork.png" alt="fork-icon">
@@ -68,8 +79,10 @@
                     </div>
                 </div>
                 <div class="card">
-                    <p>Super Cool Project</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore assumenda amet dolore corrupti libero nisi corporis eos ea, atque sequi officia placeat officiis? Alias a quae minus. Vitae inventore laudantium, natus voluptatibus consequuntur quisquam quidem.</p>
+                    <div class="card-text">
+                        <p>Super Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore assumenda amet dolore corrupti libero nisi corporis eos ea, atque sequi officia placeat officiis? Alias a quae minus. Vitae inventore laudantium, natus voluptatibus consequuntur quisquam quidem.</p>
+                    </div>
                     <div class="card-icon-container">
                         <img src="./assets/save.png" alt="save-icon">
                         <img src="./assets/fork.png" alt="fork-icon">
@@ -77,8 +90,10 @@
                     </div>
                 </div>
                 <div class="card">
-                    <p>Super Cool Project</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui quas quaerat, velit debitis, nobis nulla voluptatibus dolor doloremque adipisci iure. Harum voluptate accusantium ipsa nobis aut! Sed nesciunt, eveniet necessitatibus eius sequi mollitia voluptatem sunt illo deleniti temporibus aut magnam incidunt non odit vitae laboriosam dolores. Nobis maiores ex repellendus est dolorum placeat praesentium animi laudantium facilis ipsa magni voluptatibus ipsam dicta provident adipisci, cupiditate error eius quasi quia?</p>
+                    <div class="card-text">
+                        <p>Super Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui quas quaerat, velit debitis, nobis nulla voluptatibus dolor doloremque adipisci iure. Harum voluptate accusantium ipsa nobis aut!</p>
+                    </div>
                     <div class="card-icon-container">
                         <img src="./assets/save.png" alt="save-icon">
                         <img src="./assets/fork.png" alt="fork-icon">
@@ -86,8 +101,10 @@
                     </div>
                 </div>
                 <div class="card">
-                    <p>Super Cool Project</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nemo fugiat accusamus odio ut officia, provident, suscipit obcaecati placeat voluptas quas, delectus facere nobis? Asperiores magni cupiditate quidem adipisci error laborum aut, vero placeat voluptates? Illum officia harum illo possimus.</p>
+                    <div class="card-text">
+                        <p>Super Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nemo fugiat accusamus odio ut officia, provident, suscipit obcaecati placeat voluptas quas, delectus facere nobis? Asperiores magni cupiditate quidem adipisci error laborum aut, vero placeat voluptates? Illum officia harum illo possimus.</p>
+                    </div>
                     <div class="card-icon-container">
                         <img src="./assets/save.png" alt="save-icon">
                         <img src="./assets/fork.png" alt="fork-icon">
@@ -95,8 +112,10 @@
                     </div>
                 </div>
                 <div class="card">
-                    <p>Super Cool Project</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic soluta est vitae saepe dolorum. Modi asperiores veniam, eum similique in iste debitis, deserunt fugiat quibusdam ipsa magni necessitatibus voluptatum rem?.</p>
+                    <div class="card-text">
+                        <p>Super Cool Project</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic soluta est vitae saepe dolorum. Modi asperiores veniam, eum similique in iste debitis, deserunt fugiat quibusdam ipsa magni necessitatibus voluptatum rem?.</p>
+                    </div>
                     <div class="card-icon-container">
                         <img src="./assets/save.png" alt="save-icon">
                         <img src="./assets/fork.png" alt="fork-icon">
@@ -104,8 +123,10 @@
                     </div>
                 </div>
                 <div class="card">
-                    <p>Super Cool Project</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid non accusamus, quod officiis cum mollitia maxime id iusto sapiente aspernatur dicta quo, et dolores ex libero reprehenderit laborum incidunt! Sint, est repudiandae consectetur provident blanditiis natus odio corrupti iure minima!</p>
+                    <div class="card-text">
+                        <p>Super Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid non accusamus, quod officiis cum mollitia maxime id iusto sapiente aspernatur dicta quo, et dolores ex libero reprehenderit laborum incidunt! Sint, est repudiandae consectetur provident blanditiis natus odio corrupti iure minima!</p>
+                    </div>
                     <div class="card-icon-container">
                         <img src="./assets/save.png" alt="save-icon">
                         <img src="./assets/fork.png" alt="fork-icon">
@@ -116,50 +137,60 @@
             </div>
         </section>
 
-        <section class="announcements-section">
-            <p>Announcements</p>
-            <div class="announcement-container">
-                <div class="announcement">
-                    <p>Site Maintenance</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ducimus vel atque. Officia totam, adipisci tenetur iure saepe sint repellat?</p>
+        <div class="right-main">
+            <section class="announcements-section">
+                <h3>Announcements</h3>
+                <div class="announcement-container">
+                    <div class="announcement">
+                        <h4>Site Maintenance</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ducimus vel atque. Officia totam, adipisci tenetur iure saepe sint repellat?</p>
+                        <div class="announcement-break"></div>
+                    </div>
+                    <div class="announcement">
+                        <h4>Community Share Day</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ducimus vel atque. Officia totam, adipisci tenetur iure saepe sint repellat?</p>
+                        <div class="announcement-break"></div>
+                    </div>
+                    <div class="announcement">
+                        <h4>Terms and Condition update</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ducimus vel atque. Officia totam, adipisci tenetur iure saepe sint repellat?</p>
+                    </div>
                 </div>
-                <div class="announcement">
-                    <p>Site Maintenance</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ducimus vel atque. Officia totam, adipisci tenetur iure saepe sint repellat?</p>
+            </section>
+            <section class="trending-section">
+                <h3>Trending</h3>
+                <div class="trending-container">
+                    <div class="trending">
+                        <div class="profile-picture-circle">MB</div>
+                        <div>
+                            <p class="trending-tag">@mbrown</p>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trending">
+                        <div class="profile-picture-circle">JS</div>
+                        <div>
+                            <p class="trending-tag">@jsmith</p>
+                            <p>Construction Workers United</p>
+                        </div>
+                    </div>
+                    <div class="trending">
+                        <div class="profile-picture-circle">KK</div>
+                        <div>
+                            <p class="trending-tag">@kizkim</p>
+                            <p>Against Pollution</p>
+                        </div>
+                    </div>
+                    <div class="trending">
+                        <div class="profile-picture-circle">LE</div>
+                        <div>
+                            <p class="trending-tag">@LesisEvans</p>
+                            <p>Travel For Free</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="announcement">
-                    <p>Site Maintenance</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ducimus vel atque. Officia totam, adipisci tenetur iure saepe sint repellat?</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="trending-section">
-            <p>Trending</p>
-            <div class="trending-container">
-                <div class="trending">
-                    <div class="profile-picture-circle">MB</div>
-                    <p class="trending-tag">@mbrown</p>
-                    <p>World Peace Builder</p>
-                </div>
-                <div class="trending">
-                    <div class="profile-picture-circle">JS</div>
-                    <p class="trending-tag">@jsmith</p>
-                    <p>Construction Workers United</p>
-                </div>
-                <div class="trending">
-                    <div class="profile-picture-circle">KK</div>
-                    <p class="trending-tag">@kizkim</p>
-                    <p>Against Pollution</p>
-                </div>
-                <div class="trending">
-                    <div class="profile-picture-circle">LE</div>
-                    <p class="trending-tag">@LesisEvans</p>
-                    <p>Travel For Free</p>
-                </div>
-            </div>
-
-        </section>
+            </section>
+        </div>
     </main>
 
 </body>
